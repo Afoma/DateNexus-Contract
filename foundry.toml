@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.30"
+etherscan_api_key = "${ETHERSCAN_API_KEY}"
+
+[etherscan]
+# Base (chain ID 8453)
+base = { key = "${ETHERSCAN_API_KEY}", chain = 8453, url = "https://api.basescan.org/api" }
+
+[rpc_endpoints]
+base_mainnet = "https://mainnet.base.org"
+
+
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
